@@ -5,15 +5,15 @@
 ## zsh
 
 Run:
-	```bash
-	apt-get install zsh
-	apt-get install git-core
-	sudo apt install fonts-powerline
-	```
+    ```sh
+    apt-get install zsh
+    apt-get install git-core
+    sudo apt install fonts-powerline
+    ```
 
 Customize:
-	```
-	.zshrc
-	```
+    ```
+    .zshrc
+    ```
 
 ---
