@@ -5,7 +5,7 @@
 ## zsh
 
 Run:
-	```sh
+	```bash
 	apt-get install zsh
 	apt-get install git-core
 	sudo apt install fonts-powerline
