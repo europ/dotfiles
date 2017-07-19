@@ -6,8 +6,8 @@
 
 Run:
 ```sh
-apt-get install zsh
-apt-get install git-core
+sudo apt-get install zsh
+sudo apt-get install git-core
 sudo apt install fonts-powerline
 ```
 
