@@ -1,9 +1,3 @@
-[user]
-	name = Adrian Toth
-[pull]
-	rebase = true
-[push]
-	default = simple
 [alias]
 	branch-name = "symbolic-ref -q --short HEAD"
 	master = "checkout master"
