@@ -128,7 +128,7 @@ fi
 
 alias .='nautilus .'
 alias ..='cd ..'
-alias l='ls -A1'
+alias l='ls -A1 --group-directories-first'
 alias home='cd ~'
 alias data='cd /home/adrian/Documents'
 alias python=python3.6
