@@ -135,6 +135,7 @@ alias python=python3.6
 
 alias miq='cd /home/adrian/ManageIQ'
 alias miqup='/home/adrian/Documents/updater.sh'
+alias miqrun='cd /home/adrian/ManageIQ/manageiq && bundle exec rails s'
 
 export PATH="$PATH:$HOME/.local/bin:$HOME/bin"
 export PATH="$HOME/.rbenv/bin:$PATH"
