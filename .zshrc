@@ -97,3 +97,4 @@ alias data='cd /home/adrian/Documents'
 alias python=python3.6
 
 alias miq='cd /home/adrian/ManageIQ'
+alias miqup='/home/adrian/Documents/updater.sh'
