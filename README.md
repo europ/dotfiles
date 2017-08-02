@@ -12,10 +12,10 @@ sudo apt install zsh git-core fonts-powerline
 1. Ctrl + Shift + P
 2. Write ` Package Control: Install Package`
 3. Install
- 1. `Colorsublime`
- 2. `TrailingSpaces`
- 3. `SublimeGit`
- 4. `DoxyDoxygen`
+    * `Colorsublime`
+    * `TrailingSpaces`
+    * `SublimeGit`
+    * `DoxyDoxygen`
 ### Sublime Text 3 - Side Bar (dark color)
 1. [Download File](https://gist.github.com/umpirsky/5842174)
 2. Copy file to `/home/${USER}/.config/sublime-text-3/Packages`
