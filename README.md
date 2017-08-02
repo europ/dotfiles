@@ -1,6 +1,18 @@
 # [Ubuntu](https://www.ubuntu.com/) 16.04.2 LTS configuration files
+## Packages
+My:
+```sh
+sudo apt install htop vim vim-gnome git mc hexchat openvpn easy-rsa network-manager-openvpn network-manager-openvpn-gnome npm curl peek
+```
+
+ManageIQ stuff:
+```sh
+sudo apt install ruby git memcached postgresql libpq-dev bzip2 libffi-dev libreadline-dev libxml2-dev libxslt-dev patch libsqlite-dev libsqlite3-dev nodejs nodejs-legacy npm g++ libcurl4-gnutls-dev cmake libgit2-dev pkg-config libtool libssl1.0-dev 
+```
+
+---
+
 ## Z shell
-Run:
 ```sh
 sudo apt install zsh git-core fonts-powerline
 ```
@@ -19,10 +31,11 @@ sudo apt install zsh git-core fonts-powerline
     * `TrailingSpaces`
     * `SublimeGit`
     * `DoxyDoxygen`
+    * `A File Icon`
 ### Sublime Text 3 - Theme
 1. Ctrl + Shift + P
 2. Write `Colorsublime: Install Theme`
-3. Write `Monokai-Midnight`
+3. Install `Monokai-Midnight`
 ### Sublime Text 3 - [Side Bar - Dark](https://gist.github.com/umpirsky/5842174)
 1. [Download File](https://gist.githubusercontent.com/umpirsky/5842174/raw/1efcc83df0cd338c6c1f54c14b30516e64bc8ff7/Default.sublime-theme)
 2. Copy file to `/home/${USER}/.config/sublime-text-3/Packages`
