@@ -16,8 +16,8 @@ sudo apt install zsh git-core fonts-powerline
     * `TrailingSpaces`
     * `SublimeGit`
     * `DoxyDoxygen`
-### Sublime Text 3 - Side Bar (dark color)
-1. [Download File](https://gist.github.com/umpirsky/5842174)
+### Sublime Text 3 - [Side Bar (dark color)]((https://gist.github.com/umpirsky/5842174))
+1. [Download File](https://gist.githubusercontent.com/umpirsky/5842174/raw/1efcc83df0cd338c6c1f54c14b30516e64bc8ff7/Default.sublime-theme)
 2. Copy file to `/home/${USER}/.config/sublime-text-3/Packages`
 ## [Markdown](https://en.wikipedia.org/wiki/Markdown)
 * [LivePreview](http://tmpvar.com/markdown.html)
