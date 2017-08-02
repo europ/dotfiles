@@ -4,6 +4,9 @@ Run:
 ```sh
 sudo apt install zsh git-core fonts-powerline
 ```
+
+---
+
 ## [Sublime Text 3](https://www.sublimetext.com/3)
 * [Installation](https://www.sublimetext.com/docs/3/linux_repositories.html)
 ### Sublime Text 3 - Package Control
@@ -23,7 +26,6 @@ sudo apt install zsh git-core fonts-powerline
 ### Sublime Text 3 - [Side Bar - Dark](https://gist.github.com/umpirsky/5842174)
 1. [Download File](https://gist.githubusercontent.com/umpirsky/5842174/raw/1efcc83df0cd338c6c1f54c14b30516e64bc8ff7/Default.sublime-theme)
 2. Copy file to `/home/${USER}/.config/sublime-text-3/Packages`
-
 * Black background color `"layer0.tint": [0, 0, 0]`
 ```
     {
@@ -37,7 +39,6 @@ sudo apt install zsh git-core fonts-powerline
         "dark_content": false
     },
 ```
-
 * Grey side bar line separator `"layer0.tint": [128, 128, 128]`
 ```
     {
@@ -49,6 +50,18 @@ sudo apt install zsh git-core fonts-powerline
         "content_margin": [0, 0, 1, 0]
     },
 ```
+* Side bar font size `"font.size": 13`
+```
+    {
+        "class": "sidebar_label",
+        "color": [207, 207, 194],
+        "font.size": 13
+        // , "shadow_color": [250, 250, 250], "shadow_offset": [0, 0]
+    },
+```
+
+---
+
 ## [Markdown](https://en.wikipedia.org/wiki/Markdown)
 * [LivePreview](http://tmpvar.com/markdown.html)
 * [CheatSheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
