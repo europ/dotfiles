@@ -95,6 +95,7 @@ alias l='ls -A1 --group-directories-first'
 alias home='cd ~'
 alias data='cd /home/adrian/Documents'
 alias python=python3.6
+alias be='bundle exec'
 
 alias miq='cd /home/adrian/ManageIQ'
 alias miqup='/home/adrian/Documents/updater.sh'
