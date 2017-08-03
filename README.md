@@ -16,12 +16,14 @@ sudo apt install ruby git memcached postgresql libpq-dev bzip2 libffi-dev librea
 ```sh
 sudo apt install zsh git-core fonts-powerline
 ```
+### Zsh - Preview
+![Zsh](https://github.com/europ/dotfiles/blob/master/Zsh_preview.png)
 
 ---
 
 ## [Sublime Text 3](https://www.sublimetext.com/3)
 * [Installation](https://www.sublimetext.com/docs/3/linux_repositories.html)
-### Sublime Text 3 - Package Control
+### Sublime Text 3 - [Package Control](https://packagecontrol.io/)
 * [Installation](https://packagecontrol.io/installation)
 ### Sublime Text 3 - Packages
 1. Ctrl + Shift + P
