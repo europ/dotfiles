@@ -91,3 +91,9 @@ sudo apt install zsh git-core fonts-powerline
 ## [Markdown](https://en.wikipedia.org/wiki/Markdown)
 * [LivePreview](http://tmpvar.com/markdown.html)
 * [CheatSheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+---
+
+## Wallpapers
+![One](https://raw.githubusercontent.com/europ/dotfiles/master/Wallpapers/wallpaper.jpg)
+![Two](https://raw.githubusercontent.com/europ/dotfiles/master/Wallpapers/wallpaper2.jpeg)
