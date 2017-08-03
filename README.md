@@ -17,7 +17,7 @@ sudo apt install ruby git memcached postgresql libpq-dev bzip2 libffi-dev librea
 sudo apt install zsh git-core fonts-powerline
 ```
 ### Zsh - Preview
-![Zsh](https://github.com/europ/dotfiles/blob/master/Zsh_preview.png)
+![Zsh](https://raw.githubusercontent.com/europ/dotfiles/master/Zsh_preview.png)
 
 ---
 
@@ -84,7 +84,7 @@ sudo apt install zsh git-core fonts-powerline
 ```
 
 ### Sublime Text 3 - Preview
-![Sublime Text 3](https://github.com/europ/dotfiles/blob/master/sublime_text_3/Sublime_preview.png)
+![Sublime Text 3](https://raw.githubusercontent.com/europ/dotfiles/master/sublime_text_3/Sublime_preview.png)
 
 ---
 
