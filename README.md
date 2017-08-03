@@ -36,6 +36,14 @@ sudo apt install zsh git-core fonts-powerline
 1. Ctrl + Shift + P
 2. Write `Colorsublime: Install Theme`
 3. Install `Monokai-Midnight`
+### Sublime Text 3 - Line Highlight
+1. Preferences -> Settings
+2. Edit `Preferences.sublime-settings - User` or `/home/${USER}/.config/sublime-text-3/Packages/User/Preferences.sublime-settings`
+3. Add `"highlight_line": true`
+### Sublime Text 3 - Highlighted Line Color
+1. Open `/home/${USER}/.config/sublime-text-3/Packages/Colorsublime - Themes/Monokai-Midnight.tmTheme`
+2. Find `<key>lineHighlight</key>`
+3. Change to `<string>#454545</string>`
 ### Sublime Text 3 - [Side Bar - Dark](https://gist.github.com/umpirsky/5842174)
 1. [Download File](https://gist.githubusercontent.com/umpirsky/5842174/raw/1efcc83df0cd338c6c1f54c14b30516e64bc8ff7/Default.sublime-theme)
 2. Copy file to `/home/${USER}/.config/sublime-text-3/Packages`
@@ -72,6 +80,9 @@ sudo apt install zsh git-core fonts-powerline
         // , "shadow_color": [250, 250, 250], "shadow_offset": [0, 0]
     },
 ```
+
+### Sublime Text 3 - Preview
+![Sublime Text 3](https://github.com/europ/dotfiles/blob/master/sublime_text_3/Sublime_preview.png)
 
 ---
 
