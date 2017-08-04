@@ -1,3 +1,5 @@
+![Ubuntu Logo](https://raw.githubusercontent.com/europ/dotfiles/master/ubuntu_logo.png)
+
 # [Ubuntu](https://www.ubuntu.com/) 16.04.2 LTS configuration files
 
 ## Packages
