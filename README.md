@@ -2,12 +2,12 @@
 ## Packages
 My:
 ```sh
-sudo apt install htop vim vim-gnome git mc hexchat openvpn easy-rsa network-manager-openvpn network-manager-openvpn-gnome npm curl peek
+sudo apt install htop vim vim-gnome unity-tweak-tool mc hexchat openvpn easy-rsa network-manager-openvpn network-manager-openvpn-gnome curl peek gitk git tig
 ```
 
 ManageIQ stuff:
 ```sh
-sudo apt install ruby git memcached postgresql libpq-dev bzip2 libffi-dev libreadline-dev libxml2-dev libxslt-dev patch libsqlite-dev libsqlite3-dev nodejs nodejs-legacy npm g++ libcurl4-gnutls-dev cmake libgit2-dev pkg-config libtool libssl1.0-dev 
+sudo apt install ruby git memcached postgresql libpq-dev bzip2 libffi-dev libreadline-dev libxml2-dev libxslt-dev patch libsqlite-dev libsqlite3-dev nodejs nodejs-legacy npm g++ libcurl4-gnutls-dev cmake libgit2-dev pkg-config libtool libssl1.0-dev
 ```
 
 ---
@@ -88,9 +88,30 @@ sudo apt install zsh git-core fonts-powerline
 
 ---
 
+## My Weather Indicator
+
+```sh
+sudo add-apt-repository ppa:atareao/atareao
+sudo apt-get update
+sudo apt-get install my-weather-indicator
+```
+
+### My Weather Indicator - Preview
+![My Weather Indicator](http://ubuntuhandbook.org/wp-content/uploads/2016/04/my-weather-indicator.jpg)
+
+---
+
 ## [Markdown](https://en.wikipedia.org/wiki/Markdown)
 * [LivePreview](http://tmpvar.com/markdown.html)
 * [CheatSheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+---
+
+## .rpm to .deb
+```sh
+sudo apt-get install alien dpkg-dev debhelper build-essential
+sudo alien ${file_name}.rpm
+```
 
 ---
 
