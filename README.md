@@ -97,7 +97,7 @@ sudo apt-get install my-weather-indicator
 ```
 
 ### My Weather Indicator - Preview
-![My Weather Indicator](http://ubuntuhandbook.org/wp-content/uploads/2016/04/my-weather-indicator.jpg)
+![My_Weather_Indicator](http://ubuntuhandbook.org/wp-content/uploads/2016/04/my-weather-indicator.jpg)
 
 ---
 
@@ -107,10 +107,11 @@ sudo apt-get install my-weather-indicator
 
 ---
 
-## .rpm to .deb
+## How to install .rpm
 ```sh
 sudo apt-get install alien dpkg-dev debhelper build-essential
 sudo alien ${file_name}.rpm
+sudo dpkg -i ${file_name}.deb
 ```
 
 ---
