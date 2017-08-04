@@ -1,13 +1,27 @@
 # [Ubuntu](https://www.ubuntu.com/) 16.04.2 LTS configuration files
 
 ## Packages
-My:
+My
 ```sh
 sudo apt install htop vim vim-gnome unity-tweak-tool mc hexchat openvpn easy-rsa network-manager-openvpn network-manager-openvpn-gnome curl peek gitk git tig
 ```
-ManageIQ stuff:
+ManageIQ stuff
 ```sh
 sudo apt install ruby git memcached postgresql libpq-dev bzip2 libffi-dev libreadline-dev libxml2-dev libxslt-dev patch libsqlite-dev libsqlite3-dev nodejs nodejs-legacy npm g++ libcurl4-gnutls-dev cmake libgit2-dev pkg-config libtool libssl1.0-dev
+```
+Python3.6
+```sh
+sudo add-apt-repository ppa:jonathonf/python-3.6
+sudo apt update
+sudo apt install python3.6
+```
+Php7.1
+```sh
+sudo apt install python-software-properties -y
+sudo add-apt-repository ppa:ondrej/php
+sudo apt update
+sudo apt install -y php7.1
+sudo apt install -y php7.1-cgi php7.1-cli php7.1-fpm php7.1-mysql php7.1-mcrypt php7.1-mbstring php7.1-common php7.1-curl php7.1-pgsql php7.1-xml php7.1-zip
 ```
 
 ---
