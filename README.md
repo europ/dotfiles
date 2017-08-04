@@ -1,4 +1,6 @@
-![Ubuntu Logo](https://raw.githubusercontent.com/europ/dotfiles/master/ubuntu_logo.png)
+<p align="center">
+    <img src="https://raw.githubusercontent.com/europ/dotfiles/master/ubuntu_logo.png"/>
+</p>
 
 # [Ubuntu](https://www.ubuntu.com/) 16.04.2 LTS configuration files
 
@@ -7,7 +9,7 @@ My
 ```sh
 sudo apt install htop vim vim-gnome unity-tweak-tool mc hexchat openvpn easy-rsa network-manager-openvpn network-manager-openvpn-gnome curl peek gitk git tig
 ```
-ManageIQ stuff
+ManageIQ
 ```sh
 sudo apt install ruby git memcached postgresql libpq-dev bzip2 libffi-dev libreadline-dev libxml2-dev libxslt-dev patch libsqlite-dev libsqlite3-dev nodejs nodejs-legacy npm g++ libcurl4-gnutls-dev cmake libgit2-dev pkg-config libtool libssl1.0-dev
 ```
@@ -24,6 +26,13 @@ sudo add-apt-repository ppa:ondrej/php
 sudo apt update
 sudo apt install -y php7.1
 sudo apt install -y php7.1-cgi php7.1-cli php7.1-fpm php7.1-mysql php7.1-mcrypt php7.1-mbstring php7.1-common php7.1-curl php7.1-pgsql php7.1-xml php7.1-zip
+```
+TLP (battery manager)
+```sh
+sudo add-apt-repository ppa:linrunner/tlp
+sudo apt update
+sudo apt install tlp tlp-rdw tp-smapi-dkms acpi-call-dkms
+sudo tlp start
 ```
 
 ---
