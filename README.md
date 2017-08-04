@@ -1,10 +1,10 @@
 # [Ubuntu](https://www.ubuntu.com/) 16.04.2 LTS configuration files
+
 ## Packages
 My:
 ```sh
 sudo apt install htop vim vim-gnome unity-tweak-tool mc hexchat openvpn easy-rsa network-manager-openvpn network-manager-openvpn-gnome curl peek gitk git tig
 ```
-
 ManageIQ stuff:
 ```sh
 sudo apt install ruby git memcached postgresql libpq-dev bzip2 libffi-dev libreadline-dev libxml2-dev libxslt-dev patch libsqlite-dev libsqlite3-dev nodejs nodejs-legacy npm g++ libcurl4-gnutls-dev cmake libgit2-dev pkg-config libtool libssl1.0-dev
@@ -82,21 +82,18 @@ sudo apt install zsh git-core fonts-powerline
         // , "shadow_color": [250, 250, 250], "shadow_offset": [0, 0]
     },
 ```
-
 ### Sublime Text 3 - Preview
 ![Sublime Text 3](https://raw.githubusercontent.com/europ/dotfiles/master/sublime_text_3/Sublime_preview.png)
 
 ---
 
-## My Weather Indicator
-
+## [My Weather Indicator](https://launchpad.net/my-weather-indicator)
 ```sh
 sudo add-apt-repository ppa:atareao/atareao
 sudo apt-get update
 sudo apt-get install my-weather-indicator
 ```
-
-### My Weather Indicator - Preview
+### My Weather Indicator - Preview
 ![My_Weather_Indicator](http://ubuntuhandbook.org/wp-content/uploads/2016/04/my-weather-indicator.jpg)
 
 ---
