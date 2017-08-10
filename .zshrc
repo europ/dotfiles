@@ -51,7 +51,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rbenv)
+plugins=(git rbenv rails bundler sudo)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -92,11 +92,10 @@ DEFAULT_USER="adrian"
 alias .='nautilus .'
 alias ..='cd ..'
 alias l='ls -A1 --group-directories-first'
-alias home='cd ~'
 alias data='cd /home/adrian/Documents'
 alias python=python3.6
-alias be='bundle exec'
+
+alias update='/home/adrian/Documents/updater.sh'
 
 alias miq='cd /home/adrian/ManageIQ'
-alias miqup='/home/adrian/Documents/updater.sh'
 alias miqrun='cd /home/adrian/ManageIQ/manageiq && bundle exec rails s'

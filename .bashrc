@@ -129,13 +129,12 @@ fi
 alias .='nautilus .'
 alias ..='cd ..'
 alias l='ls -A1 --group-directories-first'
-alias home='cd ~'
 alias data='cd /home/adrian/Documents'
 alias python=python3.6
-alias be='bundle exec'
+
+alias update='/home/adrian/Documents/updater.sh'
 
 alias miq='cd /home/adrian/ManageIQ'
-alias miqup='/home/adrian/Documents/updater.sh'
 alias miqrun='cd /home/adrian/ManageIQ/manageiq && bundle exec rails s'
 
 export PATH="$PATH:$HOME/.local/bin:$HOME/bin"
