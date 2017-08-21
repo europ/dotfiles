@@ -34,6 +34,12 @@ sudo apt update
 sudo apt install tlp tlp-rdw tp-smapi-dkms acpi-call-dkms
 sudo tlp start
 ```
+PulseAudio Equalizer
+```sh
+sudo add-apt-repository ppa:nilarimogard/webupd8
+sudo apt-get update
+sudo apt-get install pulseaudio-equalizer
+```
 
 ---
 
@@ -139,5 +145,8 @@ sudo dpkg -i ${file_name}.deb
 ---
 
 ## Wallpapers
-![One](https://raw.githubusercontent.com/europ/dotfiles/master/Wallpapers/wallpaper.jpg)
-![Two](https://raw.githubusercontent.com/europ/dotfiles/master/Wallpapers/wallpaper2.jpeg)
+![1](https://raw.githubusercontent.com/europ/dotfiles/master/Wallpapers/wallpaper.jpg)
+![2](https://raw.githubusercontent.com/europ/dotfiles/master/Wallpapers/wallpaper2.jpeg)
+![3](https://raw.githubusercontent.com/europ/dotfiles/master/Wallpapers/wallpaper3.jpg)
+![4](https://raw.githubusercontent.com/europ/dotfiles/master/Wallpapers/wallpaper4.jpg)
+![5](https://raw.githubusercontent.com/europ/dotfiles/master/Wallpapers/wallpaper5.jpg)
