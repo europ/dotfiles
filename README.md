@@ -7,7 +7,7 @@
 ## Packages
 My
 ```sh
-sudo apt install htop vim vim-gnome unity-tweak-tool mc hexchat openvpn easy-rsa network-manager-openvpn network-manager-openvpn-gnome curl peek gitk git tig cloc
+sudo apt install htop vim vim-gnome unity-tweak-tool mc hexchat openvpn easy-rsa network-manager-openvpn network-manager-openvpn-gnome curl peek gitk git tig cloc traceroute arp-scan
 ```
 ManageIQ
 ```sh
