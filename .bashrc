@@ -136,6 +136,8 @@ alias update='/home/adrian/Documents/updater.sh'
 
 alias miq='cd /home/adrian/ManageIQ'
 alias miqrun='cd /home/adrian/ManageIQ/manageiq && bundle exec rails s'
+alias bers='be rails s'
+alias berc='be rails c'
 
 export PATH="$PATH:$HOME/.local/bin:$HOME/bin"
 export PATH="$HOME/.rbenv/bin:$PATH"
