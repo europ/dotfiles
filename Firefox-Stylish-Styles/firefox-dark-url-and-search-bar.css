@@ -1,0 +1,55 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#urlbar {
+    opacity: 0.7 !important;
+    background: #000000 !important;
+    color: #CCCCCC  !important;
+}
+
+#urlbar:hover {
+    opacity: 0.8 !important;
+    background: #333333 !important;
+    color: #CCCCCC  !important;
+}
+
+#urlbar[focused="true"] {
+    opacity: 1.0 !important;
+    background: #333333 !important;
+    color: #CCCCCC  !important;
+}
+
+#searchbar .searchbar-textbox {
+    opacity: 0.7 !important;
+    background: #333333 !important;
+    color: #CCCCCC  !important;
+}
+
+#searchbar .searchbar-textbox:hover {
+    opacity: 0.8 !important;
+    background: #333333 !important;
+    color: #CCCCCC  !important;
+}
+
+#searchbar .searchbar-textbox[focused="true"] {
+    opacity: 1.0 !important;
+    background: #333333 !important;
+    color: #CCCCCC  !important;
+}
+
+#PopupAutoCompleteRichResult {
+    background-color:black !important;
+    -moz-border-top-colors:black !important;
+    -moz-border-top-colors:black !important;
+    -moz-border-left-colors:black !important;
+    -moz-border-right-colors:black !important;
+}
+
+#PopupAutoCompleteRichResult .autocomplete-richlistbox {
+    background-color:black !important;
+}
+
+#PopupAutoCompleteRichResult .ac-title-text,
+#PopupAutoCompleteRichResult .ac-tags-text,
+#PopupAutoCompleteRichResult .ac-action-text {
+    color:white;
+}

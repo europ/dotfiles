@@ -1,0 +1,51 @@
+@-moz-document domain("app.wire.com") {
+
+    .messages-wrap, .message-list, .conversation-input, .start-ui-header, .start-ui-list {
+        background: #000000;
+        color: #f6ffdb;
+    }
+
+    .time, .message-status {
+        color: #66D9EF !important;
+    }
+
+    #teams, .app, .preferences-titlebar, .left-list-items, .left-list-header, .conversations-footer, .conversation-titlebar, .conversation-input .controls-right, .content-titlebar {
+        background: #000000;
+        color: #FD971F;
+    }
+
+    .accent-color-1, input, .right [class*="preferences-"] {
+        color: #66D9EF !important;   
+    }
+
+    .accent-color-2, .text-theme {
+        color: #A6E22E !important;
+    }
+
+    .accent-color-3, .accent-color-4 {
+        color: #FD971F !important;   
+    }
+
+    .accent-color-5 {
+        color: #FFFFFF !important;
+    }
+
+    .accent-color-6, [class*="theme-"] a, .icon-dismiss {
+        color: #F92672 !important;   
+    }
+
+    .accent-color-7 {
+        color: #AE81FF !important;   
+    }
+
+    ::-moz-selection {
+        background: #F92672 !important;
+        color: #FFFFFF !important;
+    }
+
+    ::selection, mark {
+        background: #F92672 !important;
+        color: #FFFFFF !important;
+    }
+
+}
