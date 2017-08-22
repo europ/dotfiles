@@ -136,8 +136,7 @@ sudo apt install zsh git-core fonts-powerline
 * [Installation](https://www.mozilla.org/en-US/firefox/all/)
 ### Firefox - Custom color page styles
 * Install [Stylish](https://addons.mozilla.org/en-US/firefox/addon/stylish/)
-* Create [new style](about:stylish-edit)
-* [Donwload](https://userstyles.org/) styles
+* [Download](https://userstyles.org/) styles
 * My styles:
     * [GitHub](https://userstyles.org/styles/37035/github-dark)
     * [Wire](https://userstyles.org/styles/145434/monokai-for-wire-com)
