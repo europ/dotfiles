@@ -17,11 +17,8 @@ git -C "$MIQ" master && git -C "$MIQ" up
 echo "${BOLD_YELLOW}Running \"git up\" in \"${MIQUC}\"${RESET}"
 git -C "$MIQUC" master && git -C "$MIQUC" up
 
-echo "${BOLD_YELLOW}Running \"bin/update\" in \"${MIQ}\"${RESET}"
-cd "$MIQ" && bin/update
-
 echo "${BOLD_YELLOW}Running \"bundler update\" in \"${MIQ}\"${RESET}"
 cd "$MIQ" && bundler install
 
-echo "${BOLD_YELLOW}Running \"bundler install\" in \"${MIQ}\"${RESET}"
-cd "$MIQ" && bundler install
+echo "${BOLD_YELLOW}Running \"bin/update\" in \"${MIQ}\"${RESET}"
+cd "$MIQ" && bin/update
