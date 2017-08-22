@@ -132,6 +132,21 @@ sudo apt install zsh git-core fonts-powerline
 
 ---
 
+## [Firefox](https://www.mozilla.org/en-US/firefox/)
+* [Installation](https://www.mozilla.org/en-US/firefox/all/)
+### Firefox - Custom color page styles
+* Install [Stylish](https://addons.mozilla.org/en-US/firefox/addon/stylish/)
+* Create [new style](about:stylish-edit)
+* [Donwload](https://userstyles.org/) styles
+* My styles:
+    * [GitHub](https://userstyles.org/styles/37035/github-dark)
+    * [Wire](https://userstyles.org/styles/145434/monokai-for-wire-com)
+    * [Firefox-BlankPage](https://userstyles.org/styles/44928/dark-gray-firefox-about-blank-about-newtab)
+    * [Firefox-SearchBar](https://userstyles.org/styles/116570/firefox-dark-url-and-search-bar)
+    * [Google-Homepage](https://userstyles.org/styles/118959/darksearch-for-google)
+
+---
+
 ## [My Weather Indicator](https://launchpad.net/my-weather-indicator)
 ```sh
 sudo add-apt-repository ppa:atareao/atareao
