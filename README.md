@@ -48,6 +48,12 @@ echo "deb https://wire-app.wire.com/linux/debian stable main" | sudo tee /etc/ap
 sudo apt-get update
 sudo apt-get install wire-desktop
 ```
+[NotifyOSD](https://wiki.ubuntu.com/NotifyOSD)
+```
+sudo add-apt-repository ppa:nilarimogard/webupd8
+sudo apt update
+sudo apt install notifyosdconfig
+```
 
 ---
 
