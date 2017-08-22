@@ -7,11 +7,16 @@
 ## Packages
 My
 ```sh
-sudo apt install htop vim vim-gnome unity-tweak-tool mc hexchat openvpn easy-rsa network-manager-openvpn network-manager-openvpn-gnome curl peek gitk git tig cloc traceroute arp-scan
+sudo apt install htop vim vim-gnome unity-tweak-tool mc hexchat openvpn easy-rsa    \
+network-manager-openvpn network-manager-openvpn-gnome curl peek git tig gitk gitg   \
+cloc traceroute arp-scan
 ```
 ManageIQ
 ```sh
-sudo apt install ruby git memcached postgresql libpq-dev bzip2 libffi-dev libreadline-dev libxml2-dev libxslt-dev patch libsqlite-dev libsqlite3-dev nodejs nodejs-legacy npm g++ libcurl4-gnutls-dev cmake libgit2-dev pkg-config libtool libssl1.0-dev
+sudo apt install ruby git memcached postgresql libpq-dev bzip2 libffi-dev    \
+libreadline-dev libxml2-dev libxslt-dev patch libsqlite-dev libsqlite3-dev   \
+nodejs nodejs-legacy npm g++ libcurl4-gnutls-dev cmake libgit2-dev libtool   \
+pkg-config libssl1.0-dev
 ```
 Python3.6
 ```sh
