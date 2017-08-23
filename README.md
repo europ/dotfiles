@@ -5,26 +5,26 @@
 # [Ubuntu](https://www.ubuntu.com/) 16.04.2 LTS configuration files
 
 ## Packages
-My
+#### My
 ```sh
 sudo apt install htop vim vim-gnome unity-tweak-tool mc hexchat openvpn easy-rsa    \
 network-manager-openvpn network-manager-openvpn-gnome curl peek git tig gitk gitg   \
 cloc traceroute arp-scan
 ```
-ManageIQ
+#### ManageIQ
 ```sh
 sudo apt install ruby git memcached postgresql libpq-dev bzip2 libffi-dev    \
 libreadline-dev libxml2-dev libxslt-dev patch libsqlite-dev libsqlite3-dev   \
 nodejs nodejs-legacy npm g++ libcurl4-gnutls-dev cmake libgit2-dev libtool   \
 pkg-config libssl1.0-dev
 ```
-Python3.6
+#### Python3.6
 ```sh
 sudo add-apt-repository ppa:jonathonf/python-3.6
 sudo apt update
 sudo apt install python3.6
 ```
-Php7.1
+#### Php7.1
 ```sh
 sudo apt install python-software-properties -y
 sudo add-apt-repository ppa:ondrej/php
@@ -32,26 +32,26 @@ sudo apt update
 sudo apt install -y php7.1
 sudo apt install -y php7.1-cgi php7.1-cli php7.1-fpm php7.1-mysql php7.1-mcrypt php7.1-mbstring php7.1-common php7.1-curl php7.1-pgsql php7.1-xml php7.1-zip
 ```
-TLP (battery manager)
+#### TLP (battery manager)
 ```sh
 sudo add-apt-repository ppa:linrunner/tlp
 sudo apt update
 sudo apt install tlp tlp-rdw tp-smapi-dkms acpi-call-dkms
 sudo tlp start
 ```
-PulseAudio Equalizer
+#### PulseAudio Equalizer
 ```sh
 sudo add-apt-repository ppa:nilarimogard/webupd8
 sudo apt-get update
 sudo apt-get install pulseaudio-equalizer
 ```
-[NotifyOSD](https://wiki.ubuntu.com/NotifyOSD)
+#### [NotifyOSD](https://wiki.ubuntu.com/NotifyOSD)
 ```sh
 sudo add-apt-repository ppa:nilarimogard/webupd8
 sudo apt update
 sudo apt install notifyosdconfig
 ```
-[Wire](https://wire.com/en/)
+#### [Wire](https://wire.com/en/)
 ```sh
 sudo apt-get install apt-transport-https
 sudo apt-key adv --fetch-keys http://wire-app.wire.com/linux/releases.key
@@ -59,7 +59,7 @@ echo "deb https://wire-app.wire.com/linux/debian stable main" | sudo tee /etc/ap
 sudo apt-get update
 sudo apt-get install wire-desktop
 ```
-[Gitter](https://gitter.im/)
+#### [Gitter](https://gitter.im/)
 [Download](https://gitter.im/apps)
 ```sh
 sudo dpkg -i ${file.deb}
