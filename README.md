@@ -2,7 +2,7 @@
     <img src="https://raw.githubusercontent.com/europ/dotfiles/master/ubuntu_logo.png"/>
 </p>
 
-# [Ubuntu](https://www.ubuntu.com/) 16.04.2 LTS configuration files
+# [Ubuntu](https://www.ubuntu.com/) 16.04.3 LTS configuration files
 
 ## Packages
 #### My
