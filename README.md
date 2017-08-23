@@ -45,19 +45,24 @@ sudo add-apt-repository ppa:nilarimogard/webupd8
 sudo apt-get update
 sudo apt-get install pulseaudio-equalizer
 ```
-[Wire](https://wire.com/en/)
+[NotifyOSD](https://wiki.ubuntu.com/NotifyOSD)
+```sh
+sudo add-apt-repository ppa:nilarimogard/webupd8
+sudo apt update
+sudo apt install notifyosdconfig
 ```
+[Wire](https://wire.com/en/)
+```sh
 sudo apt-get install apt-transport-https
 sudo apt-key adv --fetch-keys http://wire-app.wire.com/linux/releases.key
 echo "deb https://wire-app.wire.com/linux/debian stable main" | sudo tee /etc/apt/sources.list.d/wire-desktop.list
 sudo apt-get update
 sudo apt-get install wire-desktop
 ```
-[NotifyOSD](https://wiki.ubuntu.com/NotifyOSD)
-```
-sudo add-apt-repository ppa:nilarimogard/webupd8
-sudo apt update
-sudo apt install notifyosdconfig
+[Gitter](https://gitter.im/)
+[Download](https://gitter.im/apps)
+```sh
+sudo dpkg -i ${file.deb}
 ```
 
 ---
