@@ -156,6 +156,18 @@ sudo apt install zsh git-core fonts-powerline
 
 ---
 
+## Time Format
+
+### [How to](http://ubuntuhandbook.org/index.php/2015/12/time-date-format-ubuntu-panel/)
+```sh
+gsettings set com.canonical.indicator.datetime time-format 'custom'
+gsettings set com.canonical.indicator.datetime custom-time-format '%d.%m.%Y     %H:%M:%S'
+```
+### Time Format - Preview
+![Time Format](https://raw.githubusercontent.com/europ/dotfiles/master/time_format.png)
+
+---
+
 ## [My Weather Indicator](https://launchpad.net/my-weather-indicator)
 ```sh
 sudo add-apt-repository ppa:atareao/atareao
