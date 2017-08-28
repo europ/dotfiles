@@ -153,6 +153,7 @@ sudo apt install zsh git-core fonts-powerline
     * [Firefox-BlankPage](https://userstyles.org/styles/44928/dark-gray-firefox-about-blank-about-newtab)
     * [Firefox-SearchBar](https://userstyles.org/styles/116570/firefox-dark-url-and-search-bar)
     * [Google-Homepage](https://userstyles.org/styles/118959/darksearch-for-google)
+    * [Mozilla-Startpage](https://userstyles.org/styles/97709/dark-mozilla-firefox-start-page)
 
 ---
 
