@@ -1,0 +1,29 @@
+{
+    "folders":
+    [
+        {
+            "folder_exclude_patterns":
+            [
+                "log",
+                "tmp",
+                "vendor/assets/bower_components",
+                ".github",
+                "locale",
+                "coverage"
+            ],
+            "path": "manageiq"
+        },
+        {
+            "folder_exclude_patterns":
+            [
+                "app/assets/javascripts/locale",
+                "locale",
+                ".github",
+                "tmp",
+                "spec/manageiq",
+                "coverage"
+            ],
+            "path": "manageiq-ui-classic"
+        }
+    ]
+}
