@@ -97,7 +97,9 @@ alias python=python3.6
 
 alias update='/home/adrian/Documents/updater.sh'
 
-alias miq='cd /home/adrian/ManageIQ'
+alias miq='cd /home/adrian/ManageIQ/manageiq'
+alias miquc='cd /home/adrian/ManageIQ/manageiq-ui-classic'
 alias miqrun='cd /home/adrian/ManageIQ/manageiq && bundle exec rails s'
+
 alias bers='be rails s'
 alias berc='be rails c'
