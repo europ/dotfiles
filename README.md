@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/europ/dotfiles/master/ubuntu_logo.png"/>
+    <img src="https://raw.githubusercontent.com/europ/dotfiles/master/other/ubuntu_logo.png"/>
 </p>
 
 # [Ubuntu](https://www.ubuntu.com/) 16.04.3 LTS configuration files
@@ -72,7 +72,7 @@ sudo dpkg -i ${file.deb}
 sudo apt install zsh git-core fonts-powerline
 ```
 ### Zsh - Preview
-![Zsh](https://raw.githubusercontent.com/europ/dotfiles/master/Zsh_preview.png)
+![Zsh](https://raw.githubusercontent.com/europ/dotfiles/master/other/zsh_preview.png)
 
 ---
 
@@ -138,7 +138,7 @@ sudo apt install zsh git-core fonts-powerline
     },
 ```
 ### Sublime Text 3 - Preview
-![Sublime Text 3](https://raw.githubusercontent.com/europ/dotfiles/master/sublime_text_3/Sublime_preview.png)
+![Sublime Text 3](https://raw.githubusercontent.com/europ/dotfiles/master/other/sublime_preview.png)
 
 ---
 
@@ -165,7 +165,7 @@ gsettings set com.canonical.indicator.datetime time-format 'custom'
 gsettings set com.canonical.indicator.datetime custom-time-format '%d.%m.%Y     %H:%M:%S'
 ```
 ### Time Format - Preview
-![Time Format](https://raw.githubusercontent.com/europ/dotfiles/master/time_format.png)
+![Time Format](https://raw.githubusercontent.com/europ/dotfiles/master/other/time_format.png)
 
 ---
 
@@ -196,8 +196,8 @@ sudo dpkg -i ${file_name}.deb
 ---
 
 ## Wallpapers
-![1](https://raw.githubusercontent.com/europ/dotfiles/master/Wallpapers/wallpaper.jpg)
-![2](https://raw.githubusercontent.com/europ/dotfiles/master/Wallpapers/wallpaper2.jpeg)
-![3](https://raw.githubusercontent.com/europ/dotfiles/master/Wallpapers/wallpaper3.jpg)
-![4](https://raw.githubusercontent.com/europ/dotfiles/master/Wallpapers/wallpaper4.jpg)
-![5](https://raw.githubusercontent.com/europ/dotfiles/master/Wallpapers/wallpaper5.jpg)
+![1](https://raw.githubusercontent.com/europ/dotfiles/master/wallpapers/wallpaper.jpg)
+![2](https://raw.githubusercontent.com/europ/dotfiles/master/wallpapers/wallpaper2.jpeg)
+![3](https://raw.githubusercontent.com/europ/dotfiles/master/wallpapers/wallpaper3.jpg)
+![4](https://raw.githubusercontent.com/europ/dotfiles/master/wallpapers/wallpaper4.jpg)
+![5](https://raw.githubusercontent.com/europ/dotfiles/master/wallpapers/wallpaper5.jpg)
