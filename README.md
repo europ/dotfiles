@@ -76,6 +76,16 @@ sudo apt install zsh git-core fonts-powerline
 
 ---
 
+## VIM - Vi IMproved
+```sh
+sudo apt-get install vim
+```
+Move `.vimrc` and `.vim/` to `$HOME/`.
+### VIM - Preview
+![Vim](https://raw.githubusercontent.com/europ/dotfiles/master/other/vim_preview.png)
+
+---
+
 ## [Sublime Text 3](https://www.sublimetext.com/3)
 * [Installation](https://www.sublimetext.com/docs/3/linux_repositories.html)
 ### Sublime Text 3 - [Package Control](https://packagecontrol.io/)
