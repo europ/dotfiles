@@ -99,6 +99,9 @@ Move `.vimrc` and `.vim/` to `$HOME/`.
     * `SublimeGit`
     * `DoxyDoxygen`
     * `A File Icon`
+    * `SublimeLinter`
+    * `SublimeLinter-annotations`
+    * `SublimeLinter-pep8`
 ### Sublime Text 3 - Theme
 1. Ctrl + Shift + P
 2. Write `Colorsublime: Install Theme`
