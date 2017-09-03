@@ -8,8 +8,8 @@ DF="/home/adrian/dotfiles"
 MIQ="/home/adrian/ManageIQ/manageiq"
 MIQUC="/home/adrian/ManageIQ/manageiq-ui-classic"
 
-echo "${BOLD_YELLOW}Running \"git f\" in \"${DF}\"${RESET}"
-git -C "$DF" master && git -C "$DF" f
+echo "${BOLD_YELLOW}Running \"git pull\" in \"${DF}\"${RESET}"
+git -C "$DF" master && git -C "$DF" pull
 
 echo "${BOLD_YELLOW}Running \"git f\" in \"${MIQ}\"${RESET}"
 git -C "$MIQ" master && git -C "$MIQ" f
