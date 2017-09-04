@@ -1,7 +1,8 @@
 [alias]
 	branch-name = "symbolic-ref -q --short HEAD"
 	master = "checkout master"
-	lp = "!git log --pretty=format:'%<(41)%C(yellow)%H%Creset%<(21)%Cblue%an%Creset%Cgreen%s%Creset' --abbrev-commit"
+	lp = "log -p"
+	l = "!git log --pretty=format:'%<(40)%C(yellow)%H%Creset %<(18)%C(blue)%an%Creset %<(14)%cr %C(green)%s%Creset' --abbrev-commit"
 	d = "diff --unified=0"
 	f = "!git fetch --all --prune && git checkout master && git merge upstream/master --ff-only && git push && echo 'flush_all' | nc localhost 11211"
 	fixup = "!HASH=${1-$(git rev-parse HEAD)} && git commit --fixup=$HASH && EDITOR=: git rebase -i --autosquash $HASH~1 && echo"

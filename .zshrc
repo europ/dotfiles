@@ -92,6 +92,7 @@ DEFAULT_USER="adrian"
 alias .='nautilus .'
 alias ..='cd ..'
 alias l='ls -A1 --group-directories-first'
+alias lsh='ls -A --group-directories-first'
 alias data='cd /home/adrian/Documents'
 alias python=python3.6
 
