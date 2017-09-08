@@ -6,3 +6,4 @@
 	d = "diff --unified=0"
 	f = "!git fetch --all --prune && git checkout master && git merge upstream/master --ff-only && git push && echo 'flush_all' | nc localhost 11211"
 	fixup = "!HASH=${1-$(git rev-parse HEAD)} && git commit --fixup=$HASH && EDITOR=: git rebase -i --autosquash $HASH~1 && echo"
+	ls ="!git diff-tree --no-commit-id --name-only -r"

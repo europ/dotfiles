@@ -2,7 +2,7 @@
 
 RESET="\033[0m"
 BOLD_YELLOW="\033[1;33m"
-NONBOLD_YELLOW="\033[33m"
+REGULAR_YELLOW="\033[33m"
 
 DF="/home/adrian/dotfiles"
 MIQ="/home/adrian/ManageIQ/manageiq"
@@ -16,6 +16,11 @@ git -C "$MIQ" master && git -C "$MIQ" f
 
 echo "${BOLD_YELLOW}Running \"git f\" in \"${MIQUC}\"${RESET}"
 git -C "$MIQUC" master && git -C "$MIQUC" f
+
+echo "${BOLD_YELLOW}Running \"gem install bundler --pre\" in \"${MIQ}\"${RESET}"
+echo "${REGULAR_YELLOW}Current `cd "$MIQ" && bundler -v | awk '{print tolower($0)}'`${RESET}"
+cd "$MIQ" && gem install bundler --pre
+echo "${REGULAR_YELLOW}New `cd "$MIQ" && bundler -v | awk '{print tolower($0)}'`${RESET}"
 
 echo "${BOLD_YELLOW}Running \"bin/update\" in \"${MIQ}\"${RESET}"
 cd "$MIQ" && bin/update
