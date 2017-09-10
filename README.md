@@ -70,7 +70,12 @@ sudo dpkg -i ${file.deb}
 ## Z shell
 ```sh
 sudo apt install zsh git-core fonts-powerline
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+exit
+chsh -s $(which zsh)
 ```
+Logout
+Rewrite `$HOME/.zshrc` with my `dotfiles/.zshrc`.
 ### Zsh - Preview
 ![Zsh](https://raw.githubusercontent.com/europ/dotfiles/master/other/zsh_preview.png)
 
