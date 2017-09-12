@@ -7,9 +7,9 @@
 ## Packages
 #### My
 ```sh
-sudo apt install htop vim vim-gnome unity-tweak-tool mc hexchat openvpn easy-rsa    \
-network-manager-openvpn network-manager-openvpn-gnome curl peek git tig gitk gitg   \
-cloc traceroute arp-scan
+sudo apt install htop vim vim-gnome unity-tweak-tool mc hexchat openvpn easy-rsa  \
+network-manager-openvpn network-manager-openvpn-gnome curl git tig gitk gitg cloc \
+traceroute arp-scan
 ```
 #### ManageIQ
 ```sh
@@ -63,6 +63,12 @@ sudo apt-get install wire-desktop
 [Download](https://gitter.im/apps)
 ```sh
 sudo dpkg -i ${file.deb}
+```
+#### Peek (gif recorder)
+```
+sudo add-apt-repository ppa:peek-developers/stable
+sudo apt-get update
+sudo apt install peek
 ```
 
 ---
