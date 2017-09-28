@@ -193,6 +193,13 @@ gsettings set com.canonical.indicator.datetime custom-time-format '%d.%m.%Y     
 
 ---
 
+## Time fix for windows / ubuntu dualboot
+```
+timedatectl set-local-rtc 1
+```
+
+---
+
 ## [My Weather Indicator](https://launchpad.net/my-weather-indicator)
 ```sh
 sudo add-apt-repository ppa:atareao/atareao
