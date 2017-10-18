@@ -9,7 +9,7 @@
 ```sh
 sudo apt install htop vim vim-gnome unity-tweak-tool mc hexchat openvpn easy-rsa  \
 network-manager-openvpn network-manager-openvpn-gnome curl git tig gitk gitg cloc \
-traceroute arp-scan
+traceroute arp-scan tree
 ```
 #### ManageIQ
 ```sh
