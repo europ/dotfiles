@@ -145,3 +145,6 @@ export PATH="$PATH:$HOME/.local/bin:$HOME/bin"
 export PATH="$HOME/.rbenv/bin:$PATH"
 
 eval "$(rbenv init -)"
+
+# added by travis gem
+[ -f /home/adrian/.travis/travis.sh ] && source /home/adrian/.travis/travis.sh
