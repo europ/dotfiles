@@ -20,7 +20,7 @@
     # Note:
     #   - functionally similar to performing an interactive rebase and using `fixup` option
     #   - rewrites history
-    fixup = "!HASH=${1-$(git rev-parse HEAD)} && git commit --fixup=$HASH && EDITOR=: git rebase -i --autosquash $HASH~1 && echo"
+    fixup = "!HASH=${1-$(git rev-parse HEAD)} && git commit --fixup=$HASH && EDITOR=: git rebase --interactive --autosquash $HASH~1 && echo"
 
     # Edit the message for a specified commit (may introduce conflicts during rebase).
     # Usage:
@@ -28,13 +28,10 @@
     # Note:
     #   - functionally similar to performing an interactive rebase and using `reword` option
     #   - rewrites history
-    reword = "!sh -c \"git checkout $1 && git commit --amend && git rebase HEAD $(git branch-name) --autostash\" -"
+    reword = "!sh -c \"git checkout $1 && git commit --amend && git rebase --autostash --committer-date-is-author-date HEAD $(git branch-name)\" -"
 
     # Other
     d = "diff --unified=0"
     l = "!git log --pretty=format:'%<(40)%C(yellow)%H%Creset %<(18)%C(blue)%an%Creset %<(14)%cr %C(green)%s%Creset' --abbrev-commit"
     logp = "log -p"
     logs = "log --stat"
-    
-    # TODO
-    #ls ="!git diff-tree --no-commit-id --name-only -r"

@@ -1,7 +1,0 @@
-@namespace url(http://www.w3.org/1999/xhtml);
-
-@-moz-document regexp('about:blank'), regexp('about:newtab') {
-    div#newtab-vertical-margin, body {
-        background-color: #000000 !important;
-    }
-}
