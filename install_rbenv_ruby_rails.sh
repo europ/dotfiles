@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 if [[ ! -f ~/.zshrc ]]; then
 	echo "~/.zshrc not found"
