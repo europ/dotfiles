@@ -16,7 +16,7 @@ source ~/.zshrc
 rbenv install -v 2.5.1
 rbenv global 2.5.1
 
-gem install awesome_print bundler gem-path pry pry-byebug rails
+gem install awesome_print bundler gem-path pry pry-byebug rails octokit colorize git
 
 rbenv rehash
 
