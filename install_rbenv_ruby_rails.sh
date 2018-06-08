@@ -1,8 +1,8 @@
 #!/bin/zsh
 
 if [[ ! -f ~/.zshrc ]]; then
-	echo "~/.zshrc not found"
-	exit 1
+    echo "~/.zshrc not found"
+    exit 1
 fi
 
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
@@ -16,10 +16,14 @@ source ~/.zshrc
 rbenv install -v 2.5.1
 rbenv global 2.5.1
 
-gem install awesome_print bundler gem-path pry pry-byebug rails octokit colorize git
+gem install bundler
 
 rbenv rehash
 
 curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor | bash
+
+bundle install
+
+mry .rubocop.yml
 
 exit 0

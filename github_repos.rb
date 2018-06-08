@@ -7,8 +7,8 @@ require 'colorize'
 
 settings = YAML::load_file(File.join(__dir__, 'settings.yml'))
 
-token = settings["github"]["token"]
-login = settings["github"]["login"]
+token = settings['github']['token']
+login = settings['github']['login']
 
 client = Octokit::Client.new(access_token: token)
 
@@ -25,7 +25,8 @@ MSG
 
 puts "Downloading"
 
-repo_names = client.repos(login).map { |repo| repo.full_name }
+# TODO: add private repositories too
+repo_names = client.repos(login).map(&:full_name)
 
 exit 0 if repo_names.empty?
 
@@ -52,7 +53,7 @@ repos = repo_names.map do |repo|
 puts "\nCloning"
 
 repos.each do |repo|
-  r = Git.clone(repo[:ssh_url], repo[:name], :path => settings["github"]["path"], :recursive => true)
+  r = Git.clone(repo[:ssh_url], repo[:name], :path => settings['github']['path'], :recursive => true)
   r.add_remote('upstream', repo[:parent][:ssh_url]) if repo[:parent]
   # TODO: fetch repository
   print ".".green
