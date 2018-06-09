@@ -25,8 +25,7 @@ MSG
 
 puts "Downloading"
 
-# TODO: add private repositories too
-repo_names = client.repos(login).map(&:full_name)
+repo_names = client.repositories(:visibility => "all").map(&:full_name)
 
 exit 0 if repo_names.empty?
 
