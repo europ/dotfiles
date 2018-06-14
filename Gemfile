@@ -15,3 +15,5 @@ gem "awesome_print"
 gem "colorize"
 
 gem "gem-path"
+#gem "ostruct"
+gem "logger"

@@ -3,15 +3,13 @@
 require 'git'
 require 'yaml'
 require 'octokit'
+require 'ostruct'
 require 'colorize'
 
-settings = YAML::load_file(File.join(__dir__, 'settings.yml'))
+data = YAML::load_file(File.join(__dir__, "settings.yml"))
+settings = OpenStruct.new(data['github']) if data.key?('github')
 
-token = settings['github']['token']
-login = settings['github']['login']
-
-client = Octokit::Client.new(access_token: token)
-
+client = Octokit::Client.new(access_token: settings.token)
 rate = client.rate_limit
 
 puts <<-MSG
@@ -25,9 +23,8 @@ MSG
 
 puts "Downloading"
 
-repo_names = client.repositories(:visibility => "all").map(&:full_name)
-
-exit 0 if repo_names.empty?
+repos = client.repositories(:visibility => "all")
+repo_names = repos.any? { |repo| repo.key?(:full_name) } ? repos.map(&:full_name) : []
 
 repos = repo_names.map do |repo|
           repo = client.repository(repo)
@@ -52,12 +49,21 @@ repos = repo_names.map do |repo|
 puts "\nCloning"
 
 repos.each do |repo|
-  r = Git.clone(repo[:ssh_url], repo[:name], :path => settings['github']['path'], :recursive => true)
+  if File.directory?(dir = File.join(settings.path, repos.first[:name]))
+    print "\n#{dir} already exists, skipping\n"
+    next
+  end
+  r = Git.clone(repo[:ssh_url], repo[:name], :path => settings.path, :recursive => true)
   r.add_remote('upstream', repo[:parent][:ssh_url]) if repo[:parent]
-  # TODO: fetch repository
+  r.remotes.each { |remote| r.remote(remote).fetch }
+  if repo[:parent]
+    r.branch('master').checkout
+    r.merge('upstream/master')
+    r.push
+  end
   print ".".green
 end
 
 puts "\nDone".bold
 
-exit 0
+exit(0)

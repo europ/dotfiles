@@ -64,6 +64,7 @@ GEM
     i18n (1.0.1)
       concurrent-ruby (~> 1.0)
     jaro_winkler (1.5.1)
+    logger (1.2.8)
     loofah (2.2.2)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -173,6 +174,7 @@ DEPENDENCIES
   colorize
   gem-path
   git
+  logger
   mry
   octokit
   pry
