@@ -1,16 +1,20 @@
-
-
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/adrian/.oh-my-zsh
+  export ZSH="/home/adrian/.oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="agnoster"
+
+# Set list of themes to load
+# Setting this variable when ZSH_THEME=random
+# cause zsh load theme from this variable instead of
+# looking in ~/.oh-my-zsh/themes/
+# An empty array have no effect
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -23,7 +27,7 @@ ZSH_THEME="agnoster"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+export UPDATE_ZSH_DAYS=7
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -45,7 +49,7 @@ ZSH_THEME="agnoster"
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="dd.mm.yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -54,7 +58,13 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rbenv rails bundler sudo)
+plugins=(
+  git
+  rbenv
+  rails
+  bundler
+  sudo
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -87,41 +97,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-#######################################################################
-#######################################################################
-
-DEFAULT_USER="adrian"
-
-randomhex() {
-	if [ $# -eq 1 ]; then
- 		openssl rand -hex $1
- 	else
- 		echo "Missing number!"
-	fi
-}
-
-
-alias .='nautilus .'
-alias ..='cd ..'
-alias l='ls -A1 --group-directories-first'
-alias lsh='ls -A --group-directories-first'
-alias data='cd /home/adrian/Documents'
-alias python=python3.6
-
-alias update='/home/adrian/Documents/updater.sh'
-
-alias miq='cd /home/adrian/ManageIQ/manageiq'
-alias miquc='cd /home/adrian/ManageIQ/manageiq-ui-classic'
-alias miqrun='cd /home/adrian/ManageIQ/manageiq && bundle exec rails s'
-alias miqbot='cd /home/adrian/ManageIQ/miq_bot'
-
-alias bers='be rails s'
-alias berc='be rails c'
-alias bc='cd ~/Documents/BT/thesis'
-
-HISTFILE=~/.zsh_history
-HISTSIZE=9999999999999999
+HISTFILE=~/.zsh_history		
+HISTSIZE=9999999999999999		
 SAVEHIST=$HISTSIZE
 
-# added by travis gem
-[ -f /home/adrian/.travis/travis.sh ] && source /home/adrian/.travis/travis.sh
+alias .='nautilus .'
+alias data='cd /home/adrian/Documents'
