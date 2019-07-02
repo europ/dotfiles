@@ -1,0 +1,45 @@
+[user]
+    name = Adrián Tóth
+
+[push]
+    default = simple
+
+[core]
+    editor = subl -w
+
+[alias]
+    # Get the current branch name.
+    branch-name = "symbolic-ref -q --short HEAD"
+
+    # List all available git aliases.
+    alias = "!git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /"
+
+    # Delete any branches that have been merged into master.
+    cleanup = "!git branch --merged | grep -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d"
+
+    # Fetch all remotes, remove any remote-tracking branches which no longer exist on the remote and update the local and remote master.
+    # Note:
+    #   - stash changes before
+    update = "!git fetch --all --prune && git checkout master && git merge upstream/master --ff-only && git push && echo 'flush_all' | nc localhost 11211"
+
+    # Edit the changes for a specified commit (may introduce conflicts during rebase).
+    # Usage:
+    #   git fixup <commit-hash>
+    # Note:
+    #   - functionally similar to performing an interactive rebase and using `fixup` option
+    #   - rewrites history
+    fixup = "!HASH=${1-$(git rev-parse HEAD)} && git commit --fixup=$HASH && EDITOR=: git rebase --interactive --autosquash $HASH~1 && echo"
+
+    # Edit the message for a specified commit (may introduce conflicts during rebase).
+    # Usage:
+    #   git reword <commit-hash>
+    # Note:
+    #   - functionally similar to performing an interactive rebase and using `reword` option
+    #   - rewrites history
+    reword = "!sh -c \"git checkout $1 && git commit --amend && git rebase --autostash --committer-date-is-author-date HEAD $(git branch-name)\" -"
+
+    # Other
+    d = "diff --unified=0"
+    l = "!git log --pretty=format:'%<(40)%C(yellow)%H%Creset %<(18)%C(blue)%an%Creset %<(14)%cr %C(green)%s%Creset' --abbrev-commit"
+    logp = "log -p"
+    logs = "log --stat"
