@@ -18,12 +18,14 @@ sudo apt upgrade -y
 # APT packages
 notify "Installing custom apt packages ..."
 APT_PACKAGES=(
-	htop
-	vim
-	tig
-	tree
-	net-tools # ifconfig, see https://askubuntu.com/questions/1031640/ifconfig-missing-after-ubuntu-18-04-install
-	traceroute
+    curl
+    htop
+    net-tools # ifconfig, see https://askubuntu.com/questions/1031640/ifconfig-missing-after-ubuntu-18-04-install
+    openvpn
+    tig
+    traceroute
+    tree
+    vim
 )
 sudo apt-get install -y ${APT_PACKAGES}
 
@@ -94,8 +96,8 @@ chsh -s /bin/zsh
 # rbenv
 notify "Installing rbenv ..."
 sudo apt-get install -y autoconf bison build-essential libssl-dev libyaml-dev  \
-						libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev \
-						libgdbm5 libgdbm-dev
+                        libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev \
+                        libgdbm5 libgdbm-dev
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
@@ -105,18 +107,25 @@ source ~/.bashrc
 notify "Installing Ruby 2.6.3 ..."
 rbenv install 2.6.3
 rbenv global 2.6.3
-gem install --no-document \
-	bundler \
-	rails \
-	pp \
-	awesome_print \
-	pry \
-	pry-byebug
+GEMS=(
+    awesome_print
+    bundler
+    pp
+    pry
+    pry-byebug
+    rails
+)
+gem install --no-document ${GEMS}
 
 
 # Copy .dotfiles to $HOME
 notify "Copying .dotfiles ..."
 find dotfiles -type f -exec cp -v {} $HOME \;
+
+
+# Copy images to $HOME/Pictures
+notify "Copying images ..."
+find img -type f -exec cp -v {} $HOME/Pictures \;
 
 
 # Cleaning apt
