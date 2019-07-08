@@ -1,12 +1,15 @@
-#!/bin/sh
+#!/bin/bash -x
+# -x ........ Print commands and their arguments as they are executed.
 
 
-# exit immediately if a simple command exits with a nonzero exit value
+# Exit immediately if a simple command exits with a nonzero exit value
 set -e
 
 
 # Print bold yellow message (empty-line,message-line,empty-line)
-notify(){echo -e "\n\033[1;33m${1}\033[0m\n"}
+notify() {
+    echo -e "\n\033[1;33m${1}\033[0m\n"
+}
 
 
 # update and upgrade
@@ -51,13 +54,21 @@ sudo apt-get install -y sublime-text
 # Docker
 # https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04
 notify "Installing Docker ..."
-sudo apt update -y
+#sudo apt update -y
 sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable" -y
 sudo apt update -y
 sudo apt install -y docker-ce
 sudo usermod -a -G docker ${USER}
+
+
+# Ansible
+# https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-ansible-on-ubuntu-18-04
+sudo apt-get install -y software-properties-common
+sudo apt-add-repository ppa:ansible/ansible -y
+sudo apt update -y
+sudo apt install -y ansible
 
 
 # VirtualBox 6.0

@@ -1,0 +1,8 @@
+notifications:
+  email: false
+
+os: linux
+sudo: false
+
+script:
+  - bash -n install.sh
