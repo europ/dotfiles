@@ -114,7 +114,7 @@ SAVEHIST=$HISTSIZE
 alias .='nautilus .'
 alias ..='cd ..'
 alias data='cd $HOME/Documents'
-alias update='sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt autoclean -y && sudo apt autoremove && upgrade_oh_my_zsh'
+alias update='sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y && upgrade_oh_my_zsh'
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
