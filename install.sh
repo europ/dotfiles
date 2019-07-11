@@ -25,6 +25,7 @@ APT_PACKAGES=(
     htop
     net-tools # ifconfig, see https://askubuntu.com/questions/1031640/ifconfig-missing-after-ubuntu-18-04-install
     openvpn
+    ssh
     sshfs
     tig
     traceroute
