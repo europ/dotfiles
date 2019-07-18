@@ -148,6 +148,13 @@ sudo apt-get autoremove -y
 sudo apt-get autoclean -y
 
 
+# Set Sublime Text 3 as default
+notify "Setting up ST3 as default text editor ..."
+if [ -f "/usr/share/applications/sublime_text.desktop" ]; then
+    sudo sed -i "s/gedit/sublime_text/g" "/usr/share/applications/defaults.list"
+fi
+
+
 # The end
 notify "... finished."
 exit 0
