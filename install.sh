@@ -54,6 +54,13 @@ sudo apt-get update -y
 sudo apt-get install -y sublime-text
 
 
+# VideoLAN (VLC)
+# https://linuxconfig.org/how-to-install-latest-vlc-media-player-on-ubuntu-18-04-bionic-beaver-using-ppa
+sudo add-apt-repository ppa:videolan/stable-daily
+sudo apt-get update
+sudo apt-get install vlc qtwayland5 libavcodec-extra
+
+
 # Docker
 # https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04
 notify "Installing Docker ..."
