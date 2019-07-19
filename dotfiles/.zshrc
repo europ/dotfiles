@@ -69,11 +69,18 @@ HIST_STAMPS="dd.mm.yyyy"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
-  rbenv
-  rails
-  bundler
-  sudo
+  sudo       # https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/sudo
+
+  sublime    # https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/sublime
+
+  git        # https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/git
+  tig        # https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/tig
+
+  rbenv      # https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/rbenv
+  rails      # https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/rails
+  bundler    # https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/bundler
+
+  ansible    # https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/ansible
 )
 
 source $ZSH/oh-my-zsh.sh
