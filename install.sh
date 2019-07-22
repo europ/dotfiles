@@ -21,8 +21,13 @@ sudo apt upgrade -y
 # APT packages
 notify "Installing custom apt packages ..."
 APT_PACKAGES=(
+    apt-transport-https
+    build-essential
+    cmake
     curl
     htop
+    ipcalc
+    jq
     net-tools # ifconfig, see https://askubuntu.com/questions/1031640/ifconfig-missing-after-ubuntu-18-04-install
     openvpn
     ssh
@@ -42,6 +47,11 @@ notify "Installing Git ..."
 sudo apt-add-repository ppa:git-core/ppa -y
 sudo apt-get update -y
 sudo apt-get install -y git
+
+
+# Python3
+# https://askubuntu.com/questions/865554/how-do-i-install-python-3-6-using-apt-get
+# Ubuntu 18.04 already come with Python 3.6 as default.
 
 
 # Sublime Text 3
@@ -162,6 +172,11 @@ if [ -f "/usr/share/applications/sublime_text.desktop" ]; then
 fi
 
 
+# Configuring time because of dualboot
+notify "Configuring time because of dualboot ..."
+timedatectl set-local-rtc 1
+
+
 # The end
-notify "... finished."
+notify "Finish ..."
 exit 0
