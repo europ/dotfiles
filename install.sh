@@ -94,11 +94,10 @@ sudo apt install -y ansible
 
 # VirtualBox 6.0
 # https://tecadmin.net/install-virtualbox-on-ubuntu-18-04/
-# TODO: https://askubuntu.com/questions/1029198/skipping-acquire-of-configured-file-contrib-binary-i386-packages-as-repository
 notify "Installing VirtualBox 6.0 ..."
 wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
 wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
-sudo add-apt-repository "deb http://download.virtualbox.org/virtualbox/debian bionic contrib" -y
+sudo add-apt-repository "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian bionic contrib" -y
 sudo apt update -y
 sudo apt install -y virtualbox-6.0
 
