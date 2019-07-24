@@ -1,0 +1,5 @@
+deb http://archive.canonical.com/ bionic partner
+deb [arch=amd64] http://mirror.vutbr.cz/ubuntu/archive/ bionic           main multiverse restricted universe
+deb [arch=amd64] http://mirror.vutbr.cz/ubuntu/archive/ bionic-updates   main multiverse restricted universe
+deb [arch=amd64] http://mirror.vutbr.cz/ubuntu/archive/ bionic-backports main multiverse restricted universe
+deb [arch=amd64] http://mirror.vutbr.cz/ubuntu/archive/ bionic-security  main multiverse restricted universe

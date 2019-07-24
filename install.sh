@@ -12,8 +12,15 @@ notify() {
 }
 
 
+# customize /etc/apt/sources.list
+# https://wiki.debian.org/SourcesList
+# https://manpages.debian.org/unstable/apt/sources.list.5.en.html
+notify "Customizing /etc/apt/sources.list ..."
+sudo cp -v ./etc/apt/sources.list /etc/apt/sources.list
+
+
 # update and upgrade
-notify "updating and upgrading ..."
+notify "Updating and upgrading ..."
 sudo apt update -y
 sudo apt upgrade -y
 
@@ -151,7 +158,7 @@ gem install --no-document ${GEMS}
 
 # Copy .dotfiles to $HOME
 notify "Copying .dotfiles ..."
-find dotfiles -type f -exec cp -v {} $HOME \;
+find home -type f -exec cp -v {} $HOME \;
 
 
 # Copy images to $HOME/Pictures
