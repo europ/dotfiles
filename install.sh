@@ -37,6 +37,7 @@ APT_PACKAGES=(
     jq
     net-tools # ifconfig, see https://askubuntu.com/questions/1031640/ifconfig-missing-after-ubuntu-18-04-install
     openvpn
+    pavucontrol # HDMI sound bug, see https://askubuntu.com/a/1114053/978859
     software-properties-common
     ssh
     sshfs
