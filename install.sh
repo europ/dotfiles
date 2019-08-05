@@ -42,6 +42,7 @@ APT_PACKAGES=(
     ssh
     sshfs
     tig
+    tmux
     traceroute
     tree
     vim
