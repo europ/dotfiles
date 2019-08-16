@@ -71,6 +71,8 @@ HIST_STAMPS="dd.mm.yyyy"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  colored-man-pages # https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/colored-man-pages
+
   sudo       # https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/sudo
 
   sublime    # https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/sublime

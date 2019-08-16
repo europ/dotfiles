@@ -84,14 +84,16 @@ sudo snap install vlc
 
 
 # Docker
-# https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04
+# https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-engine---community
+# https://docs.docker.com/install/linux/linux-postinstall/
 notify "Installing Docker ..."
 #sudo apt update -y
-sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common
+sudo apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable" -y
-sudo apt update -y
-sudo apt install -y docker-ce
+sudo apt-get update -y
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io
+sudo groupadd docker
 sudo usermod -a -G docker ${USER}
 
 
