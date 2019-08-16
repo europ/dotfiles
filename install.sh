@@ -59,11 +59,6 @@ sudo apt-get update -y
 sudo apt-get install -y git
 
 
-# Python3
-# https://askubuntu.com/questions/865554/how-do-i-install-python-3-6-using-apt-get
-# Ubuntu 18.04 already come with Python 3.6 as default.
-
-
 # Sublime Text 3
 # https://www.sublimetext.com/docs/3/linux_repositories.html
 notify "Installing Sublime Text 3 ..."
@@ -74,11 +69,18 @@ sudo apt-get update -y
 sudo apt-get install -y sublime-text
 
 
+# Wire
+# https://github.com/wireapp/wire-desktop/wiki/How-to-install-Wire-for-Desktop-on-Linux
+sudo apt-get install -y apt-transport-https
+wget -q https://wire-app.wire.com/linux/releases.key -O- | sudo apt-key add -
+echo "deb [arch=amd64] https://wire-app.wire.com/linux/debian stable main" | sudo tee /etc/apt/sources.list.d/wire-desktop.list
+sudo apt-get update -y
+sudo apt-get install -y wire-desktop
+
+
 # VideoLAN (VLC)
-# https://linuxconfig.org/how-to-install-latest-vlc-media-player-on-ubuntu-18-04-bionic-beaver-using-ppa
-sudo add-apt-repository ppa:videolan/stable-daily
-sudo apt-get update
-sudo apt-get install vlc qtwayland5 libavcodec-extra
+# https://www.videolan.org/vlc/download-ubuntu.html
+sudo snap install vlc
 
 
 # Docker
