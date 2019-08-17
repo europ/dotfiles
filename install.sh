@@ -162,6 +162,11 @@ GEMS=(
 gem install --no-document ${GEMS}
 
 
+# Load gnome-terminal profiles preferences
+notify "Loading gnome-terminal profiles..."
+dconf load /org/gnome/terminal/legacy/profiles:/ < gnome-terminal-profiles.dconf
+
+
 # Copy .dotfiles to $HOME
 notify "Copying .dotfiles ..."
 find home -type f -exec cp -v {} $HOME \;

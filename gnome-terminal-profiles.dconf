@@ -1,0 +1,13 @@
+[:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+foreground-color='rgb(255,255,255)'
+cjk-utf8-ambiguous-width='narrow'
+palette=['rgb(0,0,0)', 'rgb(205,0,0)', 'rgb(0,205,0)', 'rgb(205,205,0)', 'rgb(0,175,255)', 'rgb(205,0,205)', 'rgb(0,205,205)', 'rgb(229,229,229)', 'rgb(127,127,127)', 'rgb(255,0,0)', 'rgb(0,255,0)', 'rgb(255,255,0)', 'rgb(92,185,255)', 'rgb(255,0,255)', 'rgb(0,255,255)', 'rgb(255,255,255)']
+cursor-shape='ibeam'
+scroll-on-output=false
+use-theme-colors=false
+use-system-font=false
+font='Ubuntu Mono 13'
+cursor-blink-mode='on'
+background-color='rgb(0,0,0)'
+scrollbar-policy='never'
+scrollback-lines=2147483647
