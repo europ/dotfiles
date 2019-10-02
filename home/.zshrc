@@ -137,3 +137,5 @@ git -C ${HOME}/.rbenv pull --recurse-submodules --rebase --stat origin master"
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+export PATH="$HOME/.local/bin:$PATH"
