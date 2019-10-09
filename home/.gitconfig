@@ -20,7 +20,7 @@
     # Fetch all remotes, remove any remote-tracking branches which no longer exist on the remote and update the local and remote master.
     # Note:
     #   - stash changes before
-    update = "!git fetch --all --prune && git checkout master && git merge upstream/master --ff-only && git push && echo 'flush_all' | nc localhost 11211"
+    update = "!git fetch --all --prune && git checkout master && git merge upstream/master --ff-only && git push && echo -e '\\033[0;32mOK\\033[0m' || echo -e '\\033[0;31mFAILED\\033[0m'"
 
     # Edit the changes for a specified commit (may introduce conflicts during rebase).
     # Usage:
