@@ -21,6 +21,8 @@ plugins=(
   sublime
   sudo
   tig
+  pip
+  pyenv
 )
 source $ZSH/oh-my-zsh.sh
 
@@ -42,8 +44,12 @@ update() {
 
   git -C $ZSH pull origin master
   git -C $ZSH/custom/plugins/zsh-syntax-highlighting pull origin master
+
   git -C "$(rbenv root)" pull origin master
   git -C "$(rbenv root)"/plugins/ruby-build pull origin master
+
+  git -C "$(pyenv root)" pull origin master
+  git -C "$(pyenv root)"/plugins/pyenv-virtualenv pull origin master
 }
 
 alias n="nautilus ."
@@ -51,4 +57,14 @@ alias D="cd $HOME/Documents"
 alias ls="ls --almost-all --group-directories-first --color=always"
 
 # ruby
-export PATH="$HOME/.rbenv/bin:$PATH"
+export RBENV_ROOT="$HOME/.rbenv"
+export PATH="$RBENV_ROOT/bin:$PATH"
+eval "$(rbenv init -)"
+
+# python
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
