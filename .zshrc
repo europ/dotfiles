@@ -42,8 +42,13 @@ update() {
 
   git -C $ZSH pull origin master
   git -C $ZSH/custom/plugins/zsh-syntax-highlighting pull origin master
+  git -C "$(rbenv root)" pull origin master
+  git -C "$(rbenv root)"/plugins/ruby-build pull origin master
 }
 
 alias n="nautilus ."
 alias D="cd $HOME/Documents"
 alias ls="ls --almost-all --group-directories-first --color=always"
+
+# ruby
+export PATH="$HOME/.rbenv/bin:$PATH"
