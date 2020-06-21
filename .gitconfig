@@ -4,6 +4,9 @@
 [push]
     default = simple
 
+[pull]
+    ff = only
+
 [core]
     editor = subl -w
 
