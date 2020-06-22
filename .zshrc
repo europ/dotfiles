@@ -49,6 +49,7 @@ update() {
   git -C "$(rbenv root)"/plugins/ruby-build pull origin master
 
   git -C "$(pyenv root)" pull origin master
+  git -C "$(pyenv root)"/plugins/pyenv-doctor pull origin master
   git -C "$(pyenv root)"/plugins/pyenv-virtualenv pull origin master
 }
 

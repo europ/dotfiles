@@ -17,6 +17,7 @@
     * [rbenv/ruby-build](https://github.com/rbenv/ruby-build)
 * Python
     * [pyenv](https://github.com/pyenv/pyenv)
+    * [pyenv/pyenv-doctor](https://github.com/pyenv/pyenv-doctor)
     * [pyenv/pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv)
 
 #### Tools
