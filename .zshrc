@@ -32,11 +32,12 @@ source $ZSH/oh-my-zsh.sh
 prompt_context() {} # remove "user@device" from prompt
 
 update() {
-  root_commads="true\
+  root_commads="true \
     && apt-get update -y \
     && apt-get upgrade -y \
     && apt-get autoclean -y \
     && apt-get autoremove -y \
+    && snap refresh \
   "
   sudo bash -c $root_commads
 
@@ -68,4 +69,5 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+# keep this line as the last one
 source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
