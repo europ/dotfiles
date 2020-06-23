@@ -1,0 +1,13 @@
+---
+dist: bionic # Ubuntu 18.04
+language: minimal
+
+matrix:
+  include:
+    - name: Linter-Markdown (markdownlint)
+      language: ruby
+      rvm: 2.7.1
+      before_install:
+        - gem install mdl
+      script:
+        - mdl --style ./.conf/markdownlint.rb .

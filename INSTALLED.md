@@ -1,4 +1,5 @@
 ### System
+
 * [Ubuntu 20.04](https://ubuntu.com/) / [Debian 10](https://www.debian.org/)
 * [GNOME Shell 3](https://www.gnome.org/gnome-3/)
 
@@ -29,7 +30,7 @@ The below-listed items may not be included in the standard system installation.
 * [Wire](https://wire.com/) ([snapcraft](https://snapcraft.io/wire))
 * [Skype](https://www.skype.com/) ([snapcraft](https://snapcraft.io/skype))
 
-#### Networking
+#### Networking
 
 * [nmap](https://nmap.org/)
 * traceroute
