@@ -41,7 +41,7 @@ update() {
   "
   sudo bash -c $root_commads
 
-  upgrade_oh_my_zsh
+  omz update
 
   git -C $ZSH pull origin master
   git -C $ZSH/custom/plugins/zsh-syntax-highlighting pull origin master
